@@ -1,1 +1,152 @@
-/* TO DO */
+body {
+    background-color: #00FF00;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.controles {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.controles button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn-ctrl-ig {
+    background-color: #E1306C;
+}
+
+.btn-ctrl-tk {
+    background-color: #000000;
+}
+
+.btn-ctrl-yt {
+    background-color: #FF0000;
+}
+
+.controles button:hover {
+    opacity: 0.8;
+}
+
+.card {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transform: translateX(-150vw);
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+}
+
+.action-btn {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.color-ig {
+    background-color: #0095F6;
+}
+
+.color-tk {
+    background-color: #FE2C55;
+}
+
+.color-yt {
+    background-color: #FF0000;
+}
+
+.animar-tarjeta {
+    animation: slideInOut 6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animar-boton {
+    animation: clickEffect 6s forwards;
+}
+
+@keyframes slideInOut {
+    0% {
+        transform: translateX(-150vw);
+    }
+
+    15% {
+        transform: translateX(0);
+    }
+
+    85% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(150vw);
+    }
+}
+
+@keyframes clickEffect {
+
+    0%,
+    45% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    55%,
+    100% {
+        background-color: #efefef;
+        color: #333;
+        transform: scale(1);
+    }
+}

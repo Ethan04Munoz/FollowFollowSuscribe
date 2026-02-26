@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Animaciones Follow</title>
 
 </head>
-<body>
 
+<body>
+    <div class="controles">
+        <button class="btn-ctrl-ig" onclick="lanzarAnimacion('instagram')">Lanzar Instagram</button>
+        <button class="btn-ctrl-tk" onclick="lanzarAnimacion('tiktok')">Lanzar TikTok</button>
+        <button class="btn-ctrl-yt" onclick="lanzarAnimacion('youtube')">Lanzar YouTube</button>
+    </div>
+
+    <div id="card-instagram" class="card">
+        <img class="profile-pic" src="https://via.placeholder.com/60" alt="Perfil">
+        <div class="info">
+            <p class="username">@Placeholder</p>
+            <p class="subtitle">Instagram</p>
+        </div>
+        <button class="action-btn color-ig" id="btn-ig">Follow</button>
+    </div>
+
+    <div id="card-tiktok" class="card">
+        <img class="profile-pic" src="https://via.placeholder.com/60" alt="Perfil">
+        <div class="info">
+            <p class="username">@Placeholder</p>
+            <p class="subtitle">TikTok</p>
+        </div>
+        <button class="action-btn color-tk" id="btn-tk">Follow</button>
+    </div>
+
+    <div id="card-youtube" class="card">
+        <img class="profile-pic" src="https://via.placeholder.com/60" alt="Perfil">
+        <div class="info">
+            <p class="username">@Placeholder</p>
+            <p class="subtitle">YouTube</p>
+        </div>
+        <button class="action-btn color-yt" id="btn-yt">Subscribe</button>
+    </div>
 </body>
+
 </html>
