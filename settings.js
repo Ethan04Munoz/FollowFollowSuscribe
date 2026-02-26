@@ -3,6 +3,8 @@ const usernames = document.querySelectorAll('.username');
 const dropZone = document.getElementById('drop-zone');
 const inputImage = document.getElementById('input-image');
 const profilePics = document.querySelectorAll('.profile-pic');
+const panelFormulario = document.getElementById('panel-formulario');
+const btnToggleForm = document.getElementById('btn-toggle-form');
 
 // Nombre
 inputUsername.addEventListener('input', (e) => {
@@ -34,6 +36,17 @@ dropZone.addEventListener('drop', (e) => {
 inputImage.addEventListener('change', (e) => {
     if (e.target.files.length) {
         actualizarImagen(e.target.files[0]);
+    }
+});
+
+//Hide and show menu
+
+btnToggleForm.addEventListener('click', () => {
+    panelFormulario.classList.toggle('oculto');
+    if (panelFormulario.classList.contains('oculto')) {
+        btnToggleForm.innerText = '➡';
+    } else {
+        btnToggleForm.innerText = '⬅';
     }
 });
 
