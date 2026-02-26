@@ -57,14 +57,20 @@ function lanzarAnimacion(redSocial) {
                 startVelocity: 30,
                 origin: {
                     x: 0.60,
-                    y: 0.50 
+                    y: 0.50
                 },
-                colors: coloresConfetti, 
+                colors: coloresConfetti,
                 disableForReducedMotion: true
-                
             });
            
         }, 3000);
+        setTimeout(() => {
+            const textoGrabacion = document.querySelector('.area-grabacion span');
+            if (textoGrabacion) {
+                textoGrabacion.style.display = '';
+            }
+            document.querySelector('.area-grabacion').style.border = ''; 
 
+        }, 7000);
     }, 500);
 }
