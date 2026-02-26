@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo
 You can try the app directly in your browser here: 
-👉 [Test the Follow Animation Generator](https://tu-usuario.github.io/tu-repositorio/)
+👉 [Test the Follow Animation Generator](https://ethan04munoz.github.io/FollowFollowSuscribe/)
 
 ---
 
@@ -47,7 +47,7 @@ Click any of the top buttons (Lanzar Instagram, Lanzar TikTok, or Lanzar YouTube
 
 ## 🚀 TRY IT NOW
 You can try the app directly in your browser here: 
-👉 [Test the Follow Animation Generator](https://google.com)
+👉 [Test the Follow Animation Generator](https://ethan04munoz.github.io/FollowFollowSuscribe/)
 
 ---
 
