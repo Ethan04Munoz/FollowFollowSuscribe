@@ -12,7 +12,10 @@ function lanzarAnimacion(redSocial) {
     const botones = document.querySelectorAll('.action-btn');
 
     tarjetas.forEach(t => t.classList.remove('animar-tarjeta'));
-    botones.forEach(b => b.classList.remove('animar-boton'));
+    botones.forEach(b => {
+        b.classList.remove('animar-boton');
+        b.classList.remove('boton-presionado');
+    });
 
     // Restaurar los textos originales de los botones
     document.getElementById('btn-ig').innerText = 'Follow';
@@ -38,7 +41,8 @@ function lanzarAnimacion(redSocial) {
 
         setTimeout(() => {
             botonActivo.innerText = textoFinal;
+            botonActivo.classList.add('boton-presionado');
         }, 3000);
 
-    }, 50);
+    }, 500);
 }

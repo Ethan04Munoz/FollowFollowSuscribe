@@ -201,12 +201,17 @@ body {
     animation: clickEffect 6s forwards;
 }
 
+.boton-presionado {
+    background-color: #efefef !important;
+    color: #333 !important;
+}
+
 @keyframes slideInOut {
     0% {
         transform: translateX(-150vw);
     }
 
-    15% {
+    10% {
         transform: translateX(0);
     }
 
@@ -222,18 +227,16 @@ body {
 @keyframes clickEffect {
 
     0%,
-    45% {
+    62% {
         transform: scale(1);
     }
 
-    50% {
+    65% {
         transform: scale(0.9);
     }
 
-    55%,
+    68%,
     100% {
-        background-color: #efefef;
-        color: #333;
         transform: scale(1);
     }
 }
