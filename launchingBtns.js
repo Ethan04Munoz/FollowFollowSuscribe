@@ -1,13 +1,20 @@
 
 function lanzarAnimacion(redSocial) {
-    // 1. Limpiar animaciones previas de todas las tarjetas
+    //Desaparece el area de grabacion para que no salga en el clip
+    const textoGrabacion = document.querySelector('.area-grabacion span');
+    if (textoGrabacion) {
+        textoGrabacion.style.display = 'none';
+        document.querySelector('.area-grabacion').style.border = 'none';
+    }
+
+    // Limpiar animaciones previas de todas las tarjetas
     const tarjetas = document.querySelectorAll('.card');
     const botones = document.querySelectorAll('.action-btn');
 
     tarjetas.forEach(t => t.classList.remove('animar-tarjeta'));
     botones.forEach(b => b.classList.remove('animar-boton'));
 
-    // 2. Restaurar los textos originales de los botones
+    // Restaurar los textos originales de los botones
     document.getElementById('btn-ig').innerText = 'Follow';
     document.getElementById('btn-tk').innerText = 'Follow';
     document.getElementById('btn-yt').innerText = 'Subscribe';
