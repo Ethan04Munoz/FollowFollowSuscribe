@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Animaciones Follow</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="formulario">
+        <input type="text" id="input-username" placeholder="Escribe tu usuario">
+        <div id="drop-zone" class="drop-zone">
+            Arrastra tu imagen aquí o haz clic
+            <input type="file" id="input-image" accept="image/*" hidden>
+        </div>
+    </div>
+
+    <div class="area-grabacion"></div>
+    
     <div class="controles">
         <button class="btn-ctrl-ig" onclick="lanzarAnimacion('instagram')">Lanzar Instagram</button>
         <button class="btn-ctrl-tk" onclick="lanzarAnimacion('tiktok')">Lanzar TikTok</button>
@@ -41,6 +51,8 @@
         </div>
         <button class="action-btn color-yt" id="btn-yt">Subscribe</button>
     </div>
+    <script src="launchingBtns.js"></script>
+    <script src="settings.js"></script>
 </body>
 
 </html>
