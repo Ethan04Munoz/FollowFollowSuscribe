@@ -26,12 +26,20 @@ function lanzarAnimacion(redSocial) {
         const tarjetaActiva = document.getElementById('card-' + redSocial);
         let idBoton = '';
         let textoFinal = 'Following';
+        let coloresConfetti = [];
 
-        if (redSocial === 'instagram') idBoton = 'btn-ig';
-        if (redSocial === 'tiktok') idBoton = 'btn-tk';
+        if (redSocial === 'instagram') {
+            idBoton = 'btn-ig';
+            coloresConfetti = ['#C13584', '#F56040', '#405DE6'];
+        }
+        if (redSocial === 'tiktok') {
+            idBoton = 'btn-tk';
+            coloresConfetti = ['#00F2EA', '#FF0050', '#000000'];
+        }
         if (redSocial === 'youtube') {
             idBoton = 'btn-yt';
             textoFinal = 'Subscribed';
+            coloresConfetti = ['#FF0000', '#FFFFFF'];
         }
 
         const botonActivo = document.getElementById(idBoton);
@@ -42,6 +50,20 @@ function lanzarAnimacion(redSocial) {
         setTimeout(() => {
             botonActivo.innerText = textoFinal;
             botonActivo.classList.add('boton-presionado');
+
+            confetti({
+                particleCount: 150,
+                spread: 60,
+                startVelocity: 30,
+                origin: {
+                    x: 0.60,
+                    y: 0.50 
+                },
+                colors: coloresConfetti, 
+                disableForReducedMotion: true
+                
+            });
+           
         }, 3000);
 
     }, 500);
